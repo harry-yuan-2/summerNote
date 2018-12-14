@@ -1,0 +1,20 @@
+<h3>Summernote editor</h3>
+
+<div>
+  <button (click)="enableEditor()" [disabled]="!editorDisabled">Enable</button>
+  <button (click)="disableEditor()" [disabled]="editorDisabled">Disable</button>
+</div>
+
+<!--
+<div [formGroup]="form">
+  <input formControlName="html" [ngxSummernote]="config" [ngxSummernoteDisabled]="editorDisabled" [(ngModel)]="dataModel">
+</div>
+-->
+<form>
+  <input name="note1" [ngxSummernote]="config" [ngxSummernoteDisabled]="editorDisabled" [(ngModel)]="dataModel">
+</form>
+
+
+
+
+Data Model: {{dataModel}}
